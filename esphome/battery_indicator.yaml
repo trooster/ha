@@ -96,8 +96,8 @@ light:
 
             static auto red = Color(255,0,0);
             static auto lightred = Color(255/2,0,0);
-            static auto orange = Color(155,133,51);
-            static auto lightorange = Color(155/2,133/2,51/2);
+            static auto orange = Color(255,140,0);
+            static auto lightorange = Color(255/2,140/2,0);
             static auto green = Color(0,255,0);
             static auto lightgreen = Color(0,255/2,0);
             static auto black = Color(0,0,0);
@@ -113,7 +113,7 @@ light:
             if (initial_run || !soc ) {    
               it.all() = black;
             } else {
-              if (soc >= 60) {
+              if (soc >= 50) {
                 color = green; 
                 lightcolor = lightgreen;
               } else if (soc >= 30) {
